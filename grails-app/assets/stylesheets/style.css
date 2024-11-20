@@ -1,0 +1,33 @@
+body {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 1.2rem !important;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+}
+
+a.navbar-brand {
+    color: #660033 !important;
+    font-size: 32px !important;
+}
+.navbar-brand {
+    font-size: 16px !important;
+}
+
+.bg-light {
+    box-shadow: 0 8px 6px -6px #d1d1d1;
+}
+
+.logo {
+    font-family: Satisfy;
+    font-weight: 900;
+    color: #660033 !important;
+    margin-top: -0.5rem !important;
+}
