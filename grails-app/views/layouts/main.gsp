@@ -36,12 +36,21 @@
         %{--Member Action Menu--}%
         <ul class="navbar-nav ml-auto">
             <p style="margin-right:3rem !important;">Logged in as : your_email</p>
-            <g:link controller="authentication" action="logout" class="mr-auto" style="margin-right:9rem !important;">
+            <g:link controller="/" action="logout" class="mr-auto" style="margin-right:9rem !important;">
                 <i class="fas fa-right-from-bracket">&nbsp;</i>Logout</g:link>
         </ul>
 
     </nav>
 </header>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-sm-2 col-md-2 d-none d-sm-block bg-light sidebar" style="margin-top: 4rem !important;">
+            <ul class="list-group">
+                <UIHelper:rightNavigation/>
+            </ul>
+        </nav>
+    </div>
+</div>
 
 </body>
 </html>

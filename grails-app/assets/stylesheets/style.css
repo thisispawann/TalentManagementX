@@ -26,8 +26,100 @@ a.navbar-brand {
 }
 
 .logo {
-    font-family: Satisfy;
+    font-family: 'Satisfy', cursive;
     font-weight: 900;
     color: #660033 !important;
     margin-top: -0.5rem !important;
+}
+
+.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    border-right: 1px solid #eee;
+    font-size: 13px;
+}
+
+.sidebar .nav {
+    margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+    width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+    margin-left: 0;
+}
+
+.sidebar .nav-link {
+    border-radius: 0;
+}
+
+body a {
+    /*color: #a00c47;*/
+    color: #BA3925;
+    text-decoration: none;
+}
+
+.bg-dark {
+    background-color: #232f3e !important;
+}
+
+.row{
+    margin-top: 5rem !important;
+}
+.action-row {
+    width: 13rem;
+    text-align: center;
+}
+
+.list-group:hover{
+    color: #ba4d33 !important;
+}
+
+.back {
+    background: #e2e2e2;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.div-center {
+    width: 400px;
+    height: 400px;
+    background-color: #f2f2f2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 3rem !important;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    padding: 1em 2em;
+    display: table;
+}
+
+div.content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dropdown-menu, .navbar-nav {
+    position: relative !important;
+}
+
+.name-link {
+    color: #3679BA;
+    font-size: 14px;
+    padding-left: 23rem;
 }

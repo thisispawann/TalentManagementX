@@ -2,6 +2,9 @@ package talentmanagementX
 
 import grails.web.servlet.mvc.GrailsParameterMap
 
+import javax.transaction.Transactional
+
+@Transactional
 class MemberService {
 
     // when controller parameter is set with same name as a request parameter, the controller parameter is retrieved
