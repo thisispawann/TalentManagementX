@@ -1,7 +1,6 @@
 %{--Include Main Layout--}%
 <meta name="layout" content="main"/>
 
-
 <div class="card" style="margin: 0rem -8rem;">
     <div class="card-header fs-4">
         <g:message code="member" args="['Lists']"/>
@@ -53,12 +52,12 @@
                         <td>${info?.email}</td>
                         <td>
                             <div class="btn-group">
-                                %{--                                <g:if test="${session.USER_ROLE == 'MANAGER' || session.userEmail == info.email}">--}%
+%{--                                <g:if test="${session.USER_ROLE == 'MANAGER' || session.userEmail == info.email}">--}%
 
-                                <g:link controller="member" action="details" class="btn btn-default"
-                                        style="background: #ffd94b80 !important;"
-                                        id="${info.id}"><i
-                                        class="fas fa-eye"></i> View</g:link>
+                                    <g:link controller="member" action="details" class="btn btn-default"
+                                            style="background: #ffd94b80 !important;"
+                                            id="${info.id}"><i
+                                            class="fas fa-eye"></i> View</g:link>
 
                                 <g:if test="${session.USER_ROLE == 'MANAGER' || session.userEmail == info.email}">
                                     <g:link controller="member" action="edit" class="btn btn-default"
@@ -80,7 +79,7 @@
                 </g:each>
                 </tbody>
             </table>
-            %{-- Pagination --}%
+        %{-- Pagination --}%
             <div class="paginate">
                 <g:paginate total="${total ?: 0}"/>
             </div>

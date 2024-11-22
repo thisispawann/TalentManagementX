@@ -1,4 +1,4 @@
-package talentmanagementX
+package talentmanagementx
 
 class GlobalConfig {
     public static final def USER_ROLE = [

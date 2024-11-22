@@ -1,9 +1,8 @@
 package talentmanagementx
 
-import talentmanagementX.MemberService
 
 class MemberController {
-
+    AuthenticationService authenticationService
     MemberService memberService
 
     def index() { // default method where we can call lists function to view all the members
@@ -47,6 +46,8 @@ class MemberController {
             return
         }
 
+//        if (loggedInMember == GlobalConfig.USER_ROLE.MANAGER || loggedInMember.id == memberToEdit.id) {
+//        if (loggedInMember == GlobalConfig.USER_ROLE.MANAGER || memberToEdit.id == loggedInMember.id) {
         if (loggedInMember == GlobalConfig.USER_ROLE.MANAGER || loggedInMember.memberType == GlobalConfig.USER_ROLE.MANAGER || loggedInMember.id == memberToEdit.id) {
             if (flash.redirectParams) {
                 [member: flash.redirectParams]
@@ -92,4 +93,5 @@ class MemberController {
         render(view: '/shared/deleteConfirmation', model: [controller: controller, action: action, id: id])
 
     }
+
 }

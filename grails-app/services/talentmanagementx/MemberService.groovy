@@ -1,4 +1,4 @@
-package talentmanagementX
+package talentmanagementx
 
 import grails.web.servlet.mvc.GrailsParameterMap
 

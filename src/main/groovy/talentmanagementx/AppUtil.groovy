@@ -1,4 +1,4 @@
-package talentmanagementX
+package talentmanagementx
 
 import org.grails.web.util.WebUtils
 

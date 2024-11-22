@@ -12,7 +12,7 @@ buildscript {
 }
 
 version "0.1"
-group "talentmanagementx"
+group "TalentManagementX"
 
 apply plugin:"eclipse"
 apply plugin:"idea"
@@ -25,6 +25,7 @@ apply plugin:"com.bertramlabs.asset-pipeline"
 repositories {
     mavenCentral()
     maven { url "https://repo.grails.org/grails/core" }
+    maven { url "https://releases.aspose.com/java/repo/"}
 }
 
 configurations {
@@ -59,9 +60,12 @@ dependencies {
     implementation "org.hibernate:hibernate-core:5.6.11.Final"
     implementation "org.grails.plugins:events"
     implementation "org.grails.plugins:gsp"
+    implementation "com.aspose:aspose-cells:22.12" // export
+//    implementation 'org.mindrot:jbcrypt:0.4' // salt hash
     profile "org.grails.profiles:web"
     runtimeOnly "org.glassfish.web:el-impl:2.2.1-b05"
-    runtimeOnly "com.h2database:h2"
+//    runtimeOnly "com.h2database:h2"
+    runtimeOnly 'com.h2database:h2:1.4.200'
     runtimeOnly "org.apache.tomcat:tomcat-jdbc"
     runtimeOnly "javax.xml.bind:jaxb-api:2.3.1"
     runtimeOnly "com.bertramlabs.plugins:asset-pipeline-grails:3.4.7"
@@ -80,10 +84,10 @@ dependencies {
 bootRun {
     ignoreExitValue true
     jvmArgs(
-        '-Dspring.output.ansi.enabled=always', 
-        '-noverify', 
-        '-XX:TieredStopAtLevel=1',
-        '-Xmx1024m')
+            '-Dspring.output.ansi.enabled=always',
+            '-noverify',
+            '-XX:TieredStopAtLevel=1',
+            '-Xmx1024m')
     sourceResources sourceSets.main
     String springProfilesActive = 'spring.profiles.active'
     systemProperty springProfilesActive, System.getProperty(springProfilesActive)
