@@ -23,7 +23,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
 
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
@@ -32,7 +32,7 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
-        <a class="navbar-brand" href="/">TalentManagement X</a>
+        <a class="navbar-brand logo" href="/">TalentManagementX</a>
         %{--Member Action Menu--}%
         <ul class="navbar-nav ml-auto" style="margin-left: 44rem;">
             <UIHelper:memberActionMenu/>

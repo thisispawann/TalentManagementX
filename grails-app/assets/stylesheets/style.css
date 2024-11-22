@@ -133,7 +133,7 @@ div.content {
 .name-link {
     color: #3679BA;
     font-size: 14px;
-    padding-left: 23rem;
+    padding-left: 39rem;
 }
 
 .w-50 {
@@ -204,9 +204,10 @@ div.content {
     z-index: 1000;
 }
 
-/*.center-spinner {*/
-/*    position: fixed;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*}*/
-
+.logo {
+    font-family: 'Satisfy', cursive !important;
+    font-weight: 900;
+    font-size: 19px !important;
+    color: #660033 !important;
+    margin-top: 0.5rem !important;
+}
