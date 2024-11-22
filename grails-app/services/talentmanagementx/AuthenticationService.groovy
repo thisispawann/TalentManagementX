@@ -1,5 +1,4 @@
 package talentmanagementx
-//import org.mindrot.jbcrypt.BCrypt
 
 
 class AuthenticationService {
@@ -65,6 +64,4 @@ class AuthenticationService {
             return true
         }
     }
-
-
 }

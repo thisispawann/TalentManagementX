@@ -1,8 +1,7 @@
 package talentmanagementx
 
+import grails.gorm.transactions.Transactional
 import grails.web.servlet.mvc.GrailsParameterMap
-
-import javax.transaction.Transactional
 
 @Transactional
 class MemberService {
