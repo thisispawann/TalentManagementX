@@ -60,8 +60,13 @@
     </div>
 </div>
 
+%{--<footer class="bottom-footer">--}%
+%{--    &copy Copyright 2023 - Employee Management System. | All rights reserved. Ver. 1.0.0--}%
+%{--</footer>--}%
 <footer class="bottom-footer">
-    &copy Copyright 2023 - Employee Management System. | All rights reserved. Ver. 1.0.0
+    &copy;
+    <script>document.write(new Date().getFullYear())</script>
+    - Talent Management System. | All rights reserved. Ver. 1.0.0
 </footer>
 
 </body>
